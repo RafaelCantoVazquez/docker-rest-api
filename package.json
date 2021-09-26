@@ -1,0 +1,16 @@
+{
+  "name": "sicei_core",
+  "version": "1.0.0",
+  "description": "A simple SICEI rest api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/index.js"
+  },
+  "author": "Rafael Canto Vázquez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.13"
+  }
+}
