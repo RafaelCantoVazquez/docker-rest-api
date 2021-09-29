@@ -20,10 +20,8 @@ const students = [
   },
 ];
 
-app.get("/students", function (req, res) {
+app.get("/students", (req, res) => {
   res.status(200).json(students);
 });
 
-app.listen(8080, () => {
-  console.log("Listening on port 8080!");
-});
+module.exports = app;

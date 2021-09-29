@@ -4,13 +4,23 @@
   "description": "A simple SICEI rest api",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./src/index.js"
+    "test": "jest --verbose",
+    "start": "nodemon ./src/server.js"
   },
   "author": "Rafael Canto Vázquez",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "nodemon": "^2.0.13"
+  },
+  "devDependencies": {
+    "jest": "^27.2.2",
+    "supertest": "^6.1.6"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
   }
 }
